@@ -58,8 +58,8 @@ For creating a table, please look into `sql/dbc.sql`
 Go to `/etc/apache2/sites-enabled`.
 Open the `000-default.conf` and copy & paste the following:
 
-`
-<VirtualHost *:80>
+
+`<VirtualHost *:80>
 
 	ServerAdmin webadmin@localhost
 	DocumentRoot /var/www/your-webroot/ducite
@@ -67,8 +67,7 @@ Open the `000-default.conf` and copy & paste the following:
 
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
-`
+</VirtualHost>`
 
 For now this is enough.
 Open a new CLI (Shell) and type `sudo service apache2 restart`.
