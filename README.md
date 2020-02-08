@@ -37,6 +37,46 @@ We want to mention, that Ducite was only tested on Apache2.4 on a Raspberry Pi. 
 `sudo apt-get install php7.3 apache2 mysql-server phpmyadmin -y`
 
 Follow all instructions on the screen. If errors occur, please check the command again, otherwise create a new issue.
+You should have created a root user with the mySQL installation.
+now type `sudo mysql -p` then enter your password.
+
+Type into the console `CREATE USER 'ducite'@'localhost' IDENTIFIED BY 'password';`
+Please replace `ducite` and `password` with the value you like.
+Now type `GRANT ALL PRIVILEGES ON *.* TO 'ducite'@'localhost';`
+at the end type `FLUSH PRIVILEGES;`
+
+now we are going to setup a database
+with this command `CREATE DATABASE ducite`.
+You can replace `ducite` with everything else.
+
+Now type `exit`.
+
+For creating a table, please look into `sql/dbc.sql`
+
+**To check that everything works fine, we need to configurate Apache2**
+
+Go to `/etc/apache2/sites-enabled`.
+Open the `000-default.conf` and copy & paste the following:
+
+`
+<VirtualHost *:80>
+
+	ServerAdmin webadmin@localhost
+	DocumentRoot /var/www/your-webroot/ducite
+	ServerName localhost
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+`
+
+For now this is enough.
+Open a new CLI (Shell) and type `sudo service apache2 restart`.
+Hurray, we have configured Apache2 with Ducite.
+
+
+If an error occured, open an issue!
+***
 
 From now on, follow the "Casual-User Installation Guide".
 
@@ -61,7 +101,14 @@ But we are not ready here.
 
 Next you need to edit the `db.inc.php` file and enter real values there.
 
-`$dbServername`: Please enter the Servername. Usually you can just
+`$dbServername` : Please enter the Servername. Usually you can just write down "localhost", if the webserver is on the same device as the mySQL Server
+
+`$dbUsername`: Enter the Username you just created in "Total Beginners Guide" or just enter a valid username.
+
+`dbPassword` Enter the password you created in "Total Beginners Guide" or a valid password that matches to the username.
+**Attention: The Password in the `db.inc.php` file is encrypted. We advise using this! But you are also allowed typing your password plain into it**
+
+`dbName` :  Enter a valid Database name. If you have followed the "Total Beginners Guide", you can use the database you just created there.
 
 
 
