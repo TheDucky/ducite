@@ -1,0 +1,18 @@
+body {
+    background-image: url("/images/ao.gif");
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.box {
+    width: auto;
+    border: 5px solid;
+    padding: auto;
+    margin: auto;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    
+}
