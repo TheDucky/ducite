@@ -1,5 +1,6 @@
 *.sql linguist-language=SQL
-*.php linguist-language=PHP,HTML
+*.php linguist-language=PHP
+
 * text=auto
 * linguist-vendored=false
 * linguist-detectable=true
