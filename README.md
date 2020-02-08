@@ -1,5 +1,5 @@
 # Ducite
-![GitHub contributors](https://img.shields.io/github/contributors/TheDucky/ducite)  ![GitHub repo size](https://img.shields.io/github/repo-size/TheDucky/ducite)  ![GitHub issues](https://img.shields.io/github/issues-raw/TheDucky/ducite)
+![GitHub contributors](https://img.shields.io/github/contributors/TheDucky/ducite)  ![GitHub repo size](https://img.shields.io/github/repo-size/TheDucky/ducite)  ![GitHub issues](https://img.shields.io/github/issues-raw/TheDucky/ducite)   ![GitHub language count](https://img.shields.io/github/languages/count/TheDucky/ducite)
 
 Ducite is a fast and lightweight Open-Source Project, enabling you to create Databases and Webforms within one Click.
 
