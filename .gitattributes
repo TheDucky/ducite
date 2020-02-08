@@ -1,3 +1,4 @@
 *.sql linguist-language=SQL
 *.php linguist-language=PHP,HTML
 * text=auto
+* linguist-vendored=false

@@ -1,0 +1,10 @@
+#AuthType Basic
+#AuthName "Admins Only"
+#AuthUserFile absolute/path-to-this/.htpasswd
+#Require valid-user
+
+
+
+##################################################
+# It is very important, that you link the full path, otherwise Apache will throw a 500 HTTP Error.
+#Until you uncomment everything above, except these two comments, the admin panel is NOT secured!
