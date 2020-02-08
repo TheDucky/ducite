@@ -33,10 +33,20 @@ We want to mention, that Ducite was only tested on Apache2.4 on a Raspberry Pi. 
 
 ## Total Beginners Guide
 
-**If you haven't installed Apache2, PHP 7.3 and MYSQL before, please run this command:**
+Please proceed with the following only, if you have not installed PHP 7.3, Apache2 and MySQL yet.
+Otherwise proceed with the "Casual Users Guide".
+
+You can choose between two Options, an manual installation and a automated installation.
+
+If during the Installation you get any errors, please open an issue.
+***
+
+### Option 1: Manual Installation
+
 `sudo apt-get install php7.3 apache2 mysql-server phpmyadmin -y`
 
 Follow all instructions on the screen. If errors occur, please check the command again, otherwise create a new issue.
+**You can also start the `total-beginners.sh` if you don't want to perform the first step**
 You should have created a root user with the mySQL installation.
 now type `sudo mysql -p` then enter your password.
 
@@ -53,7 +63,14 @@ Now type `exit`.
 
 For creating a table, please look into `sql/dbc.sql`
 
+### Option 2: Automated Installation
+
+If you want to run a automated installation, please run the script `setup/total-beginners.sh`.
+Follow everything on the screen and check for errors and texts, it might be useful.
+
 **To check that everything works fine, we need to configurate Apache2**
+
+***
 
 Go to `/etc/apache2/sites-enabled`.
 Open the `000-default.conf` and copy & paste the following:
@@ -108,6 +125,8 @@ Next you need to edit the `db.inc.php` file and enter real values there.
 **Attention: The Password in the `db.inc.php` file is encrypted. We advise using this! But you are also allowed typing your password plain into it**
 
 `dbName` :  Enter a valid Database name. If you have followed the "Total Beginners Guide", you can use the database you just created there.
+
+
 
 
 
