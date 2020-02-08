@@ -3,4 +3,4 @@
 
 * text=auto
 * linguist-vendored=false
-* linguist-detectable=true
+*.sql linguist-detectable=true

@@ -17,7 +17,7 @@
                 <p>We need you to fill out some boxes below, for the integration with this website to the Database</p>
                 <p><b>It is very important, that you fill in the right information<b></p>
 
-                <form class="box" action="includes/setup.php" method="POST">
+                <form class="box" action="/includes/setup.php" method="POST">
 
                     <input type="text" name="server" placeholder="Please enter here, on what server your MySQL Database is, for default it is 'localhost'" style="width:490px;margin-top:20px;">
                         <br><br>
