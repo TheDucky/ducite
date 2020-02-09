@@ -6,19 +6,31 @@ body {
 }
 
 .box {
-    width: auto;
+    width: 1000px;
+    height: auto;
     border: 5px solid;
     padding: auto;
     margin: auto;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
-    
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 0.64);
+}
+
+::placeholder {
+
+    color: rgb(255, 255, 255); 
+    opacity: 1;
+}
+
+::placeholder:hover{
+    opacity: 0.5; 
+    transition: 0s; 
 }
 
 .button {
-    background-color: rgba(102, 104, 111, 0.671);
+    background-color: rgba(102, 104, 111, 0.65);
     border: solid;
     color: white;
     padding: 16px 32px;
@@ -32,21 +44,22 @@ body {
     cursor: pointer;
     border-radius: 20%
     }
+
   
 .button:hover {opacity: 1}
 
 .input {
-    color:rgb(39, 40, 48);
+    color:rgb(39, 40, 48, 1);
     height: 0.75cm;
     text-align: center;
     width: 6cm; 
-    border-color: rgba(99, 101, 108, 0.3);
-    background-color: rgba(102, 104, 111, 0.3);
-    opacity: 1;
+    border-color: rgba(133, 133, 133, 0.2);
+    background-color: rgba(102, 104, 111);
+    opacity: 0.5;
     }
     
 .input:hover {
 
-    opacity: 0.6; 
-    transition: 0.3s; 
+    opacity: 1; 
+    transition: 0s; 
 }
