@@ -13,6 +13,7 @@
         <body>
             <h1>Your Site</h1>
 
+
                 <p>You can create your special form below, we suggest changing kinda everything until you like it</p>
 
                 <div class="box" id="form">
