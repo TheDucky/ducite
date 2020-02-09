@@ -1,0 +1,1 @@
+- in Index.php die placeholder Farbe anpassen
