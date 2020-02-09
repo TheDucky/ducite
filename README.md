@@ -12,11 +12,11 @@ Currently Ducite allows you to:
 
 **- create Webforms**
 
+**- create a automated setup**
+
 ## Features we are planning
 
 **- create Webforms online, without going to the source code**
-
-**- create a automated setup**
 
 ***- more comming***
 
@@ -25,7 +25,9 @@ Currently Ducite allows you to:
 We want to mention, that Ducite was only tested on Apache2.4 on a Raspberry Pi. Actually, this is a open-source for the Raspberry Pi, but we don't guarantee that it also works on other OS or Pi Models.
 
 **- PHP 7.3**
+
 **- Apache 2.4**
+
 **- MySQL (known as MariaDB)**
 
 ## Installation
@@ -104,6 +106,8 @@ First, you need to go to the webroot of your website, you can do this with the `
 Second, you need to clone this repository with the 
 `git clone https://github.com/TheDucky/ducite.git` command.
 
+**You skipped the Total Beginners Guide, please ensure you have a Database and a user with that you can access the database and change values.**
+
 Then:
 
 `cd ducite`
@@ -112,7 +116,7 @@ Maybe you need to configure the `.htaccess` and `.htpasswd` file. It's very impo
 
 ***
 
-**Congratulations!** You have installed ducite succesfully!
+**Congratulations!** You have installed Ducite succesfully!
 But we are not ready here.
 
 Next you need to edit the `db.inc.php` file and enter real values there.
