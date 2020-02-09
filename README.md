@@ -29,7 +29,7 @@ We want to mention, that Ducite was only tested on Apache2.4 on a Raspberry Pi. 
 **- MySQL (known as MariaDB)**
 
 ## Installation
-(This is a installation guide for the Raspberry Pi 4 using Apache2.4)
+(This is a installation guide for Debian 10 Buster (Raspian) using Apache2.4)
 
 ## Total Beginners Guide
 
