@@ -5,5 +5,3 @@
 * linguist-vendored=false
 *.sql linguist-detectable=true
 *.sh linguist-language=Shell
-
-index.php linguist-language=HTML
