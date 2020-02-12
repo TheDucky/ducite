@@ -4,9 +4,11 @@ body {
     font-family: Arial;
     text-align: center;
 }
-
+ 
 .box {
-    width: 1000px;
+    
+    width: auto;
+    max-width: 800px;
     height: auto;
     border: 5px solid;
     padding: auto;
@@ -16,6 +18,11 @@ body {
     margin-right: auto;
     opacity: 1;
     border-color: rgba(255, 255, 255, 0.64);
+    transition: all 0.5s;
+}
+
+.box:hover{
+    max-width: 1000px;
 }
 
 ::placeholder {
@@ -29,6 +36,34 @@ body {
     transition: 0s; 
 }
 
+
+
+.button {
+  background: #258cd1;
+  position: relative;
+  color: white;
+  top: 100px;
+  font-size: 23px;
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 15px 0px 0px rgba(102, 104, 111, 0.3), 0px 0px 20px 0px rgba(102, 104, 111, 0.3);
+  transition: all 0.1s;
+}
+
+.button:hover {
+    top: 108px;
+    box-shadow: 0px 7px 0px 0px rgba(102, 104, 111, 0.7);
+    background-color: rgb(66, 67, 71, 0.7);
+}
+
+
+.button {
+  background-color: rgb(66, 67, 71, 0.3);
+}
+
+
+/*(alter)
 .button {
     background-color: rgba(102, 104, 111, 0.65);
     border: solid;
@@ -46,20 +81,27 @@ body {
     }
 
   
-.button:hover {opacity: 1}
+.button:hover {opacity: 1} 
+*/
+
+
 
 .input {
-    color:rgb(39, 40, 48, 1);
-    height: 0.75cm;
+    color:white;
+    height: 40px;
     text-align: center;
-    width: 6cm; 
+    width: 500px; 
     border-color: rgba(133, 133, 133, 0.2);
     background-color: rgba(102, 104, 111);
     opacity: 0.5;
+    border-radius: 10px;
+    transition: all 0.5s;
+    font-size: 20px;
     }
     
 .input:hover {
 
     opacity: 1; 
     transition: 0s; 
-}
+    font-size: 23px;
+} 
