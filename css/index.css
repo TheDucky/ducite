@@ -105,3 +105,15 @@ body {
     transition: 0s; 
     font-size: 23px;
 } 
+
+a:link {
+    color:white;
+  }
+  
+  a:active {
+    color:grey;
+  }
+
+a:visited {
+    color:grey;
+}

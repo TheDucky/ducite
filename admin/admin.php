@@ -30,7 +30,7 @@
                         <p>Welcome, here you can change the general settings.</p>
                         <p style="color:red;">Please fill out everything correctly, otherwise it could cause lots of errors.</p>
                         <p>You should use the same database as used in /includes/db.inc.php!</p>
-                        <form style="background-color: rgba(102, 104, 111, 0.2);padding:20px;" action="include/admin.inc.php" method="POST" id="form" class="box">
+                        <form style="background-color: rgba(102, 104, 111, 0.2);padding:20px;" action="include/changeconnect.inc.php" method="POST" id="form" class="box">
                             
 
                                 <input class ="input" type="text" name="admin_username" placeholder="The Admins Username">
