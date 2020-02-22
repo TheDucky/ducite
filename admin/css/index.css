@@ -15,3 +15,12 @@
   }
   
   .button:hover {opacity: 1}
+
+
+a:link {
+  color:white;
+}
+
+a:active {
+  color:grey;
+}

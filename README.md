@@ -35,6 +35,7 @@ We want to mention, that Ducite was only tested on Apache2.4 on a Raspberry Pi. 
 
 ## Total Beginners Guide
 
+This guide is for really total beginners. If you aren't a beginner, you have the requirements installed and added a user and database for this project already
 Please proceed with the following only, if you have not installed PHP 7.3, Apache2 and MySQL yet.
 Otherwise proceed with the "Casual Users Guide".
 

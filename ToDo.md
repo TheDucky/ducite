@@ -5,6 +5,5 @@
 
 ## Developers ToDo
 
-- change the placeholder color for the webforms template
 - add a functional admin panel (includes everything in the `admin` directory
 - multi-language platform, we are planning to include German.
