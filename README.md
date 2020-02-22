@@ -1,4 +1,5 @@
 # Ducite
+![Ducite Logo](https://cdn.discordapp.com/attachments/538895915902304268/680785081996279824/2685643415_259bda24-fc55-4727-85f1-845288619d21.png)
 ![GitHub contributors](https://img.shields.io/github/contributors/TheDucky/ducite)  ![GitHub repo size](https://img.shields.io/github/repo-size/TheDucky/ducite)  ![GitHub issues](https://img.shields.io/github/issues-raw/TheDucky/ducite)   ![GitHub language count](https://img.shields.io/github/languages/count/TheDucky/ducite)
 
 Ducite is a fast and lightweight Open-Source Project, enabling you to create Databases and Webforms within one Click.
