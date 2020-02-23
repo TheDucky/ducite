@@ -5,7 +5,6 @@
     <head>
             <meta charset="UTF-8">
             <title>Ducite Admin Panel</title>
-            <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
             <link rel="stylesheet" type="text/css" href="/css/ul.css">
             <link rel="stylesheet" type="text/css" href="/css/index.css">
         </head>
@@ -19,7 +18,7 @@
                 <br>
                 <br>
                 <br>
-                <li><a href="">General Settings</a></li>
+                <li><a href="#">General Settings</a></li>
             </ul>
 
         
@@ -37,7 +36,7 @@
                                     <br><br>
                                 <input class="input" type="password" name="admin_password" placeholder="ultra secret password">
                                     </br><br>
-                                <input class="input" type="text" name="admin_database" placeholder="ducite">
+                                <input class="input" type="text" name="database" placeholder="ducite">
                                     <br><br>
                                 <button class="button" type="submit" name="submit">Apply Changes!</button>
                         </form>
