@@ -1,5 +1,7 @@
 <?php
 
+    include "variables.php";
+
 $data_1 = $_POST['admin_username'];
 $dbpswd = $_POST['admin_password'];
 $dbname = $_POST['database'];
@@ -36,5 +38,4 @@ DATA;
     fclose($handle);
 
     echo($text);
-
 ?>

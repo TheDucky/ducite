@@ -4,7 +4,7 @@
 $dbServername = "localhost";
 $dbUsername = "";
 $dbpassword = "";
-$dbname = "ducite";
+$dbname = "";
 
 $conn = mysqli_connect($dbServername, $dbUsername, $dbpassword, $dbname);
 

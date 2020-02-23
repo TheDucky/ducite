@@ -87,10 +87,14 @@ Open the `000-default.conf` and copy & paste the following:
 	DocumentRoot /var/www/your-webroot/ducite
 	ServerName localhost
 
+	ErrorDocument 404 /errors/404.html
+	ErrorDocument 401 /errors/401.html
+
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>`
 
+Ensure to change "/var/www/your-webroot/ducite" to an existing folder. **Your folder should be named "`/var/www/ducite/ducite`"**
 For now this is enough.
 Open a new CLI (Shell) and type `sudo service apache2 restart`.
 Hurray, we have configured Apache2 with Ducite.
@@ -115,24 +119,21 @@ Then:
 
 `cd ducite`
 
-Maybe you need to configure the `.htaccess` and `.htpasswd` file. It's very important for the security.
+Maybe you need to configure the `/admin/.htaccess` and `/admin/.htpasswd` file. It's very important for the security.
 
 ***
 
 **Congratulations!** You have installed Ducite succesfully!
 But we are not ready here.
 
-Next you need to edit the `db.inc.php` file and enter real values there.
+### The last things!
+Next you need to visit the `/admin/admin.php` in your browser. If you get prompted you enter a password and username and a text named "Admins Only", type in "ducite" and the default password is: "ducite"
 
-`$dbServername` : Please enter the Servername. Usually you can just write down "localhost", if the webserver is on the same device as the mySQL Server
+Enter now the admins username for your database, the admins password and the ducite database.
+Then the entered values are going to be written in a new file.
 
-`$dbUsername`: Enter the Username you just created in "Total Beginners Guide" or just enter a valid username.
 
-`dbPassword` Enter the password you created in "Total Beginners Guide" or a valid password that matches to the username.
-**Attention: The Password in the `db.inc.php` file is encrypted. We advise using this! But you are also allowed typing your password plain into it**
-
-`dbName` :  Enter a valid Database name. If you have followed the "Total Beginners Guide", you can use the database you just created there.
-
+Congratz! You are now ready-to-use with Ducite!
 
 
 

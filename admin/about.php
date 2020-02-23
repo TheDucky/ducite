@@ -30,7 +30,11 @@
                     <h2>In what programming languages is it written?</h2>
                         <p>It is mostly written in PHP and HTML. This Project also uses other languages, like CSS, Shell and SQL.</p>
 
+                    <br>
+                    <h2>How does it work?</h2>
+                        <p>Ducite is mostly written in PHP, this makes lots of things easier.<br>The programm creates/overwrites everytime you change settings the files.<br>This needs a bit more of work, but makes it easier to fix errors, if you (accidently) modified the code.</p>
            
                 </div>
         </body>
     </html>
+    

@@ -33,8 +33,9 @@
                         <p><br>Well, <b>PHP7.3 is needed to run PHP Scripts, without it, this Webform Creator tool wouldn't work.</b><br>Apache2 is used as Webserver, it is easy-to-use and very popular.<br>mySQL is used to store your Data, that got submitted in a form, in a database.<br>And the last one, phpmyadmin is optional but very useful if you don't want to see your data from the CLI (Command-Line-Interface).</p>
                         <hr>
                     <h2>2. How can I configure Ducite?</h2>
+                    <p><b>When you see this, you may have already configured Ducite</b></p>
                         <p>You can configure Ducite firstly with the "total-beginners.sh", but in there are not really configurations just for Ducite.</p>
-                        <p><b>Please edit the includes/db.inc.php file to valid values, then go to the index.html and enter values you like to. Then you will see a a error or success message, depending on the db.inc.php file.</b></p>
+                        <p>Please click here: <a href="admin.php">click me!</p>
                         <p>You can also configure Ducite through the <a href="admin.php">Admin Panel</a></p>
                     
                     <p style="color:red;">If you have any questions or you get errors durin the installation or use of Ducite, please write us a email at<br> <a href="mailto:info@duck-developing-studio.ga">info@duck-developing-studio.ga</a><br>! Thank you!</p>
