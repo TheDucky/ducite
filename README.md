@@ -87,8 +87,9 @@ Open the `000-default.conf` and copy & paste the following:
 	DocumentRoot /var/www/your-webroot/ducite
 	ServerName localhost
 
-	ErrorDocument 404 /errors/404.html
-	ErrorDocument 401 /errors/401.html
+	ErrorDocument 404 /errors/client-errors-4xx/404.html
+	ErrorDocument 401 /errors/client-errors-4xx/401.html
+	ErrorDocument 500 /errors/server-errors-5xx/500.html
 
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
@@ -157,3 +158,15 @@ or you can create a ticket on GitHub under the Issues tab!
 **For more FAQ check out the `FAQ.md` file**
 
 **Thank you for using Ducite!**
+
+***
+
+
+## References
+
+We used a repository to write the error texts.
+
+Repository:
+
+website-template by **TheDucky**: https://github.com/TheDucky/website-template/tree/master/error-pages/
+(the template isn't finished and it won't be finished by TheDucky)

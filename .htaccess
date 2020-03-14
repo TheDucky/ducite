@@ -1,2 +1,6 @@
-ErrorDocument 404 /errors/404.html 
-ErrorDocument 401 /errors/401.html
+# HTTP-Statuscode handling
+ErrorDocument 404 /errors/client-errors-4xx/404.html 
+ErrorDocument 401 /errors/client-errors-4xx/401.html
+
+ErrorDocument 500 /errors/server-errors-5xx/500.html
+ErrorDocument 503 /errors/server-errors-5xx/503.html

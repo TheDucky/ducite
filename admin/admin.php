@@ -21,7 +21,6 @@
                 <li><a href="#">General Settings</a></li>
             </ul>
 
-        
 
                 <div id="gsettings">
 
