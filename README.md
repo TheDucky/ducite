@@ -141,4 +141,19 @@ Congratz! You are now ready-to-use with Ducite!
 
 ***
 
+## Optional/Other/FAQ
+
+Here you can find optional things and FAQs.
+
+# Why are there different Versions of Ducite?
+Well, we also make updates so we may not loose our files we worked on.
+Every important changes will be backuped and may also uploaded to GitHub.
+So check out the GitHub branches!
+
+## How can I get help?
+You can write us an email: info@duck-developing-studio.ga
+or you can create a ticket on GitHub under the Issues tab!
+
+**For more FAQ check out the `FAQ.md` file**
+
 **Thank you for using Ducite!**
