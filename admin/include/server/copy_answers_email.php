@@ -1,6 +1,7 @@
 <?php
 
     require "../config/app.php";
+    require "../../check.php";
 
 # This file is for sending an copy of the submitted answers
 
@@ -51,5 +52,12 @@ if(mail($to, $subject, $message, $headers)) {
 } else{
     echo "Failed sending Email";
 };
+
+
+
+
+
+#COMMENTS REMOVED IN THE NEXT TEMPLATES!
+
 
 ?>

@@ -20,7 +20,7 @@ Currently Ducite allows you to:
 
 **- create Webforms online, without going to the source code**
 
-***- more comming***
+***- more coming***
 
 ## Requirements
 
@@ -84,15 +84,25 @@ Open the `000-default.conf` and copy & paste the following:
 `<VirtualHost *:80>
 
 	ServerAdmin webadmin@localhost
+	#Change to your webroot
 	DocumentRoot /var/www/your-webroot/ducite
 	ServerName localhost
 
+	#Errorhandling
 	ErrorDocument 404 /errors/client-errors-4xx/404.html
 	ErrorDocument 401 /errors/client-errors-4xx/401.html
 	ErrorDocument 500 /errors/server-errors-5xx/500.html
 
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+	#Allows .htaccess files and actually reads them, also change to webroot
+	<Directory /var/www/ducite/ducite/>
+		RewriteEngine On
+		AllowOverride All
+		Require all granted
+		Options Indexes FollowSymLinks
+	</Directory>
 </VirtualHost>`
 
 Ensure to change "/var/www/your-webroot/ducite" to an existing folder. **Your folder should be named "`/var/www/ducite/ducite`"**

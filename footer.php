@@ -1,8 +1,7 @@
 <?php
     require "admin/include/config/app.php";
 
-$s_year = $ini['s_year'];
-$c_year = $ini['c_year'];
+    $s_year = $ini['start_year'];
 
 ?>
 
@@ -33,7 +32,7 @@ $c_year = $ini['c_year'];
         </style>
 
         <footer class="footer">
-            &copy;
+            &copy; <?php echo $s_year; ?> - <?php echo date("Y"); ?> <?php echo $app_name; ?>
         </footer>
     </body>
 </html>

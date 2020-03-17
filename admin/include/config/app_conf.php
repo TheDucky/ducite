@@ -1,5 +1,7 @@
 <?php
 
+require "../../../check.php";
+
 # WRITES INTO THE INI FILE 
 
     require "app.ini";
@@ -9,11 +11,16 @@ $ini = parse_ini_file("app.ini");
 ###########################################
 #              Form Handling              #
 
-$web_name = $_POST['web_name'];
+$app_name = $_POST['app_name'];
 $com_name = $_POST['com_name'];
 $app_id   = rand(111111111, 666666666);
+$db = $_POST['db'];
+$db_host = $_POST['db_host'];
 $db_username = $_POST['db_username'];
 $db_password = base64_encode($_POST['db_password']);
+$s_yearS  = $_POST['s_year'];
+$c_yearC  = date("Y");
+$db = $_POST['db'];
 
 
 ###########################################
@@ -56,16 +63,18 @@ db_prefix =
 default_language = "english"
 other_language = "german"
 
+[website]
+
+c_year = "$s_yearS"
+s_year = "$c_yearC"
+
 DATA;
 
 
-
+#Filehandling
 $handle = fopen($file, "w") or die("Couldn't open the file : " . $file);
 
     fwrite($handle, $data) or die("Can't write on file : " . $file);
 
     fclose($handle);
-
-    echo($text);
-
 ?>
