@@ -5,6 +5,7 @@
 
 Ducite is a fast and lightweight Open-Source Project, enabling you to create Databases and Webforms within one Click.
 
+<span style="color:red;">Ducite's Development is going to be paused for a month (21.04.2020).</span>
 
 
 
