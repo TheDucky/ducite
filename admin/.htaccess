@@ -1,8 +1,8 @@
 AuthType Basic
 AuthName "Admins Only"
-AuthUserFile /var/www/ducite/ducite/admin/.htpasswd
+AuthBasicProvider file
+AuthUserFile "/var/www/ducite/ducite/admin/.htpasswd"
 Require valid-user
-
 
 
 ##################################################

@@ -1,15 +1,11 @@
 <?php
 
+require "../admin/include/config/app.php";
+require "../check.php";
 
-/*Be carefully!*/
 
-$dbServername = "localhost";
-$dbUsername = "ente"; /* Insert your MySQL Username here */
-$dbPassword = base64_decode("SGF2ZBmdW4gd2l0aCBEdWNpdGU=");  /* And insert here your password, should be clear, huh?*/
-/* Attention: We suggest encoding your password to base64, because it's much safer! But you can also type it here not decoded. You can use this site: https://cryptii.com/pipes/text-to-base64 */
-$dbName = "ducite"; /* As well the database*/
 
-$conn = mysqli_connect($dbServername, $dbUsername, "bryanb551", $dbName);
+$conn = mysqli_connect($db_host, $db_username, base64_decode($db_password), $db);
 
 if (mysqli_connect_error()) {
     die("<link rel='stylesheet' type='text/css' href='/css/index.css'><br><h1>\n"

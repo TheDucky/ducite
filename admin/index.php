@@ -1,6 +1,6 @@
 <?php
 
-    include_once "include/admin.inc.php";
+    require "../check.php";
     session_start();
 
 ?>

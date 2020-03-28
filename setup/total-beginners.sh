@@ -1,5 +1,5 @@
 
-sudo apt-get install php7.3 apache2 mariadb-server phpmyadmin -y
+sudo apt-get install php7.3 apache2 mariadb-server phpmyadmin certbot -y
 wait
 echo "Please proceed now from the Ducite GitHub Page, the first step is done";
 echo "If any errors occured, please open a issue on the Ducite GitHub Page https://github.com/TheDucky/ducite/issues";

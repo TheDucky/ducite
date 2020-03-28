@@ -1,7 +1,9 @@
 <?php
 
-    include "variables.php";
-
+    require "variables.php";
+    require "../../../check.php";
+    
+# Stores the submitted data from Superglobal variables to Global variables
 $data_1 = $_POST['admin_username'];
 $dbpswd = $_POST['admin_password'];
 $dbname = $_POST['database'];

@@ -5,6 +5,7 @@
 
 Ducite is a fast and lightweight Open-Source Project, enabling you to create Databases and Webforms within one Click.
 
+<span style="color:red;">Ducite's Development is going to be paused for a month (21.04.2020).</span>
 
 
 
@@ -20,7 +21,7 @@ Currently Ducite allows you to:
 
 **- create Webforms online, without going to the source code**
 
-***- more comming***
+***- more coming***
 
 ## Requirements
 
@@ -84,14 +85,25 @@ Open the `000-default.conf` and copy & paste the following:
 `<VirtualHost *:80>
 
 	ServerAdmin webadmin@localhost
+	#Change to your webroot
 	DocumentRoot /var/www/your-webroot/ducite
 	ServerName localhost
 
-	ErrorDocument 404 /errors/404.html
-	ErrorDocument 401 /errors/401.html
+	#Errorhandling
+	ErrorDocument 404 /errors/client-errors-4xx/404.html
+	ErrorDocument 401 /errors/client-errors-4xx/401.html
+	ErrorDocument 500 /errors/server-errors-5xx/500.html
 
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+	#Allows .htaccess files and actually reads them, also change to webroot
+	<Directory /var/www/ducite/ducite/>
+		RewriteEngine On
+		AllowOverride All
+		Require all granted
+		Options Indexes FollowSymLinks
+	</Directory>
 </VirtualHost>`
 
 Ensure to change "/var/www/your-webroot/ducite" to an existing folder. **Your folder should be named "`/var/www/ducite/ducite`"**
@@ -141,4 +153,31 @@ Congratz! You are now ready-to-use with Ducite!
 
 ***
 
+## Optional/Other/FAQ
+
+Here you can find optional things and FAQs.
+
+# Why are there different Versions of Ducite?
+Well, we also make updates so we may not loose our files we worked on.
+Every important changes will be backuped and may also uploaded to GitHub.
+So check out the GitHub branches!
+
+## How can I get help?
+You can write us an email: info@duck-developing-studio.ga
+or you can create a ticket on GitHub under the Issues tab!
+
+**For more FAQ check out the `FAQ.md` file**
+
 **Thank you for using Ducite!**
+
+***
+
+
+## References
+
+We used a repository to write the error texts.
+
+Repository:
+
+website-template by **TheDucky**: https://github.com/TheDucky/website-template/tree/master/error-pages/
+(the template isn't finished and it won't be finished by TheDucky)
