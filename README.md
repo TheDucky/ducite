@@ -1,5 +1,5 @@
-# Ducite
-**ATTENTION: THIS PROJECT IS *DEAD*. YOU CAN USE THE CODE FOR OWN MODIFICATIONS AND PULL IT AS A OWN BRANCH**
+# [INACTIVE] Ducite
+**ATTENTION: THIS PROJECT IS *DEAD*. YOU CAN USE THE CODE FOR OWN MODIFICATIONS AND PULL IT AS A BRANCH**
 
 ![GitHub contributors](https://img.shields.io/github/contributors/TheDucky/ducite)  ![GitHub repo size](https://img.shields.io/github/repo-size/TheDucky/ducite)  ![GitHub issues](https://img.shields.io/github/issues-raw/TheDucky/ducite)   ![GitHub language count](https://img.shields.io/github/languages/count/TheDucky/ducite)
 
